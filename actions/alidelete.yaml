@@ -1,0 +1,30 @@
+---
+description: "Delete a zone alias"
+enabled: true
+runner_type: "python-script"
+entry_point: "alidelete.py"
+name: "alidelete"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "Optional override of the password in <credential_name>."
+    required: false
+    secret: true
+  aliName:
+    type: string
+    description: "name of the alias."
+    required: true
+
+
+
+
+
+

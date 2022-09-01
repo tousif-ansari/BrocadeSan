@@ -1,0 +1,28 @@
+---
+description: "Print switch and port status"
+enabled: true
+runner_type: "python-script"
+entry_point: "switchshow.py"
+name: "switchshow"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "password for the login the switch"
+    required: false
+    secret: true
+
+
+
+
+
+
+
+

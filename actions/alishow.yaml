@@ -1,0 +1,31 @@
+---
+description: "Print zone alias information"
+enabled: true
+runner_type: "python-script"
+entry_point: "alishow.py"
+name: "alishow"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "password for the login the switch"
+    required: false
+    secret: true
+  aliName:
+    type: string
+    description: "name of the alias."
+    required: true
+
+
+
+
+
+
+

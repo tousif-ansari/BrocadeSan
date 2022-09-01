@@ -1,0 +1,24 @@
+---
+description: "Enable a zone configuration"
+enabled: true
+runner_type: "python-script"
+entry_point: "cfgenable.py"
+name: "cfgenable"
+parameters:
+  ip:
+    type: string
+    description: "IP address used when connecting to windows host"
+    required: false
+  username:
+    type: string
+    description: "username."
+    required: false
+  password:
+    type: string
+    description: "password for the login the switch"
+    required: false
+    secret: true
+  cfgName:
+    type: string
+    description: "name of the alias."
+    required: true
